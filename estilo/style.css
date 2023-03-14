@@ -155,4 +155,17 @@ section.arthur p{
     padding: 5px;
     text-indent: 20px;
     line-height: 20px;
+    width: 50%;
+    position: absolute;
+}
+section.arthur picture{
+    position: absolute;
+    width: 100px;
+    left: 60%;
+}
+
+section.arthur div#arthur{
+    width: 95%;
+    height: 400px;
+    position: relative;
 }
