@@ -89,12 +89,12 @@ section.home{
 section.home div#home{
     position: absolute;
     width: 90%;
-    top: 20%;
+    top: 15%;
     left: 5%;
 }
 section.home h1{
     font-family: var(--fonte01);
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 300;
     color: var(--cor03);
     text-align: center;
