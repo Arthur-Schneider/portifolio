@@ -8,4 +8,6 @@ cor03: #588157
 cor04: #A3B18A
 cor05: #DAD7CD
 
-fonte
+fonte01: Zaptron
+
+<a target="_blank" href="https://icons8.com/icon/44486/terminal">Terminal</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> favicom

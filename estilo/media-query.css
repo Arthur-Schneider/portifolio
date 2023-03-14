@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Pontos de interrupção típicos do dispositivo
+------------------------
+Telas pequenas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Área de trabalho: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
+    }
+    menu#menu{
+        background-color: #A3B18A;
+        width: 100vw;
+        display: block;
+    }
+    menu > ul {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Zaptron;
+    src: url('fontes/Zaptron-Regular.otf') format('opentype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #344E41;
+}
+
+/*Header - menu*/
+header{
+    text-align: right;
+    background-color: #A3B18A;
+}
+header ul{
+    list-style-type: none;
+}
+header menu{
+    display: none;
+}
+header ul > li{
+    background-color: #A3B18A;
+    padding: 5px;
+    width: 100px;
+    margin-left: auto;
+}
+span#burguer{
+    background-color: #A3B18A;
+    font-size: 35px;
+    padding-right: 10px;
+}
+span#burguer:hover{
+    color: white;
+    cursor: pointer;
+}
