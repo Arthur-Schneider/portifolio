@@ -70,21 +70,22 @@ span#burguer{
     font-size: 35px;
     padding-right: 10px;
 }
-span#burguer:{
+span#burguer:active{
     color: white;
     cursor: pointer;
 }
 
 /*main - home*/
-section.home{
+main div#fundo{
     background-color: black;
     background-image: url('../imagens/fundo-home.jpg');
     background-size: cover;
     background-position: right, center;
     background-attachment: fixed;
+}
+section.home{
     height: 100vw;
     position: relative;
-    
 }
 section.home div#home{
     position: absolute;
@@ -135,4 +136,23 @@ section.home div#botao-home a:active{
     color: var(--cor05);
     box-shadow: -3px 3px 6px #ffd9cf65;
     transform: translate(+3px, -3px);
+}
+
+/*main - arthur*/
+section.arthur{
+    padding: 20px;
+    color: var(--cor04);
+    font-family: var(--fonte02);
+}
+section.arthur h3{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+section.arthur p{
+    background-color: rgba(255, 255, 255, 0.548);
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    text-indent: 20px;
+    line-height: 20px;
 }
