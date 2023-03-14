@@ -3,36 +3,132 @@
     font-family: Zaptron;
     src: url('fontes/Zaptron-Regular.otf') format('opentype');
 }
+@import url('https://fonts.googleapis.com/css2?family= Raleway :wght@400;600;700 & display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
-    background-color: #344E41;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: black;
+    --cor02: #5E94CC;
+    --cor03: #90FFFE;
+    --cor04: #FFD9CF;
+    --cor05: #CC655E;
+
+    --fonte01: 'Zaptron', sans-serif;
+    --fonte02: 'Raleway', sans-serif;
 }
 
 /*Header - menu*/
 header{
     text-align: right;
-    background-color: #A3B18A;
+    background-color: var(--cor01);
+    position: relative;
+    font-family: var(--fonte02);
+}
+
+header h2{
+   position: absolute;
+   color: var(--cor03);
+   margin-top: 5px;
+   margin-left: 20px;
+   font-family: var(--fonte01);
+   font-weight: 100;
 }
 header ul{
     list-style-type: none;
-}
-header menu{
-    display: none;
+    margin-top: 10px;
+    
 }
 header ul > li{
-    background-color: #A3B18A;
+    color: var(--cor03);
+    
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    transition: .3s;
+}
+header ul > li a:hover{
+    background-color: var(--cor05);
+    border-radius: 5px;
+    width: 90vw;
+    cursor: pointer;
+}
+header ul > li > a{
     padding: 5px;
-    width: 100px;
-    margin-left: auto;
+    color: var(--cor04);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
 }
 span#burguer{
-    background-color: #A3B18A;
+    color: var(--cor03);
     font-size: 35px;
     padding-right: 10px;
 }
 span#burguer:hover{
     color: white;
     cursor: pointer;
+}
+
+/*main - home*/
+section.home{
+    background-color: black;
+    background-image: url('../imagens/fundo-home.jpg');
+    background-size: cover;
+    background-position: right, center;
+    background-attachment: fixed;
+    height: 100vw;
+    position: relative;
+    
+}
+section.home div#home{
+    position: absolute; 
+    top: 20%;
+    left: 8%;
+}
+section.home h1{
+    font-family: var(--fonte01);
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--cor03);
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.445);
+}
+section.home h2{
+    color: var(--cor04);
+    padding-top: 50px;
+    font-size: 25px;
+    font-family: var(--fonte02);
+}
+section.home div#botao-home{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+section.home div#botao-home a{
+    background-color: rgba(255, 255, 255, 0.068);
+    padding: 5px;
+    color: var(--cor04);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--fonte02);
+    border-radius: 30px;
+    border: 1px solid var(--cor04);
+    margin: 5px;
+    width: 90px;
+    display: inline-block;
+    box-shadow: -1px 1px 5px #ffd9cf65;
+    transition: .3s;
+}
+section.home div#botao-home a:hover{
+    background-color: var(--cor04);
+    color: var(--cor05);
+    box-shadow: -3px 3px 6px #ffd9cf65;
+    transform: translate(+3px, -3px);
 }

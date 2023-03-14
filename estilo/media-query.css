@@ -13,12 +13,8 @@ Grandes telas: acima de 1200px
     span#burguer{
         display: none;
     }
-    menu#menu{
-        background-color: #A3B18A;
-        width: 100vw;
-        display: block;
-    }
-    menu > ul {
+    
+    header menu > ul > li{
         display: inline-block;
     }
 }
