@@ -84,7 +84,7 @@ main div#fundo{
     background-attachment: fixed;
 }
 section.home{
-    height: 100vw;
+    height: 500px;
     position: relative;
 }
 section.home div#home{
@@ -95,7 +95,7 @@ section.home div#home{
 }
 section.home h1{
     font-family: var(--fonte01);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     color: var(--cor03);
     text-align: center;
@@ -103,16 +103,16 @@ section.home h1{
 }
 section.home h2{
     color: var(--cor04);
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 22px;
     font-family: var(--fonte02);
 }
 section.home div#botao-home{
     position: absolute;
-    top: 70%;
-    left: 10%;
+    top: 60%;
+    left: 30%;
 }
 section.home div#botao-home a{
     background-color: rgba(255, 255, 255, 0.068);
@@ -145,8 +145,8 @@ section.arthur{
     font-family: var(--fonte02);
 }
 section.arthur h3{
-    padding-bottom: 15px;
-    font-size: 25px;
+    padding-top: 90px;
+    font-size: 28px;
 }
 section.arthur p{
     background-color: rgba(255, 255, 255, 0.548);
@@ -155,12 +155,14 @@ section.arthur p{
     padding: 5px;
     text-indent: 20px;
     line-height: 20px;
-    width: 50%;
+    width: 90vw;
     position: absolute;
+    top: 45%;
 }
 section.arthur picture{
     position: absolute;
     left: 60%;
+    top: 5%;
 }
 
 section.arthur div#arthur{
