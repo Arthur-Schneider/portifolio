@@ -82,6 +82,8 @@ main div#fundo{
     background-size: cover;
     background-position: right, center;
     background-attachment: fixed;
+    height: 1020px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.562);
 }
 section.home{
     height: 500px;
@@ -137,7 +139,20 @@ section.home div#botao-home a:active{
     box-shadow: -3px 3px 6px #ffd9cf65;
     transform: translate(+3px, -3px);
 }
-
+/*espaco entre home e arthur*/
+div#espaco{
+    position: absolute;
+    width: 100vw;
+    top: 152%;
+}
+div#espaco p{
+    font-size: 85px;
+    font-weight: 100;
+    font-family: var(--fonte01);
+    text-align: center;
+    color: var(--cor05);
+    
+}
 /*main - arthur*/
 section.arthur{
     padding: 20px;
@@ -169,4 +184,9 @@ section.arthur div#arthur{
     width: 95%;
     height: 400px;
     position: relative;
+}
+/*main - conhecimentos*/
+section.conhecimentos{
+    margin-top: 40px;
+    padding: 20px;
 }
