@@ -190,3 +190,13 @@ section.conhecimentos{
     margin-top: 40px;
     padding: 20px;
 }
+section.conhecimentos h3{
+    font-family: var(--fonte02);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor05), transparent);
+    color: white;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
+}
