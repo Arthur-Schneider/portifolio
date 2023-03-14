@@ -141,9 +141,9 @@ section.home div#botao-home a:active{
 }
 /*espaco entre home e arthur*/
 div#espaco{
-    position: absolute;
     width: 100vw;
-    top: 152%;
+    height: 90px;
+    transform: translate(0px, -44px);
 }
 div#espaco p{
     font-size: 85px;
@@ -187,8 +187,7 @@ section.arthur div#arthur{
 }
 /*main - conhecimentos*/
 section.conhecimentos{
-    margin-top: 40px;
-    padding: 20px;
+    padding: 1px 20px 20px 20px;
 }
 section.conhecimentos h3{
     font-family: var(--fonte02);
@@ -199,4 +198,9 @@ section.conhecimentos h3{
     color: white;
     border-radius: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
+}
+section.conhecimentos div#img{
+    width: 100px;
+    padding: 10px;
+    padding-top: 20px;
 }
