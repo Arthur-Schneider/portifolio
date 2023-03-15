@@ -185,11 +185,11 @@ section.arthur div#arthur{
     height: 400px;
     position: relative;
 }
-/*main - conhecimentos*/
-section.conhecimentos{
+/*main - hailidaddes*/
+section.habilidades{
     padding: 1px 20px 20px 20px;
 }
-section.conhecimentos h3{
+section.habilidades h3{
     font-family: var(--fonte02);
     font-weight: bold;
     font-size: 20px;
@@ -199,8 +199,109 @@ section.conhecimentos h3{
     border-radius: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
 }
-section.conhecimentos div#img{
-    width: 100px;
+section.habilidades div#img{
+    width: 25%;
     padding: 10px;
     padding-top: 20px;
+    display: inline-block;
+}
+
+/*Slider*/
+.slider{
+    width: 260px;
+    height: 120px;
+    overflow: hidden;
+    padding: 15px;
+    transform: translate(140px, -190px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.479);
+    position: relative;
+}
+
+.slider input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    height: 100px;
+    width: 400%;
+}
+
+.slide, .first{
+    width: 25%;
+    height: 100%;
+    margin-right: 50px;
+    transition: all 700ms ease-in-out;
+}
+
+.slide p{
+    font-family: var(--fonte02);
+    font-size: 16px;
+    
+}
+
+/*Barras de navegação*/
+.navigation-bar{
+    position: absolute;
+    display: flex;
+    left: 35%;
+    top: 80%;
+    
+}
+
+.manual-btn{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 8px;
+}
+
+.manual-btn:hover{
+    background-color: var(--cor05);
+    transition: all 600ms ease-in-out;
+}
+
+/*Configurações do menu de nav para ficar selecionado*/
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    left: 35%;
+    top: 80%;
+}
+
+.navigation-auto div{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 8px;
+}
+
+#btn01:checked ~ .navigation-auto .auto-btn01{
+    background-color: #CC655E;
+}
+#btn02:checked ~ .navigation-auto .auto-btn02{
+    background-color: #CC655E;
+}
+#btn03:checked ~ .navigation-auto .auto-btn03{
+    background-color: #CC655E;
+}
+
+/*Configuração das trocas de tela*/
+#btn01:checked ~ .first{
+    margin-left: 0;
+}
+#btn02:checked ~ .first{
+    margin-left: -30%;
+}
+#btn03:checked ~ .first{
+    margin-left: -60%;
 }

@@ -17,10 +17,10 @@
         <span class="material-icons" id="burguer" onclick="clickMenu()">menu_open</span>
             <menu id="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Arthur</a></li>
-                    <li><a href="">Habilidades</a></li>
-                    <li><a href="">Projetos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arthur">Arthur</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </menu>
     </header>
@@ -50,41 +50,68 @@
             </section>
         </div>
         <div id="espaco"><p>&lt;/&gt;</p></div>
-        <section class="conhecimentos">
-            <h3>Conhecimentos</h3>
-            <div id="img">
-                <picture id="img01">
-                    <source media="(max-width: 570px)" srcset="imagens/HTML5-pp.png">
-                    <img src="imagens/HTML5.png" alt="Foto Arthur">
-                </picture>
-                <picture id="img02">
-                    <source media="(max-width: 570px)" srcset="imagens/CSS3-pp.png">
-                    <img src="imagens/CSS3.png" alt="Foto Arthur">
-                </picture>
-                <picture id="img03">
-                    <source media="(max-width: 570px)" srcset="imagens/JS-pp.png">
-                    <img src="imagens/JS.png" alt="Foto Arthur">
-                </picture>
-            </div>
-            <div id="info">
-                <p>Tenho conhecimento em HTML5 e continuo estuando, iniciei os estudos na linguagem de marcação a 3 meses.</p>
-                <p>Tenho conhecimento em CSS3 e continuo estuando, iniciei os estudos na linguagem de estilo a 3 meses.</p>
-                <p>Iniciei os estudos na linguagem de programação JavaScript a 1 mês.</p>
+        <section class="habilidades">
+            <div id="habilidades">
+                <h3>Habilidades</h3>
+                <div id="img">
+                    <picture id="img01">
+                        <source media="(max-width: 570px)" srcset="imagens/HTML5-pp.png">
+                        <img src="imagens/HTML5.png" alt="Foto Arthur">
+                    </picture>
+                    <picture id="img02">
+                        <source media="(max-width: 570px)" srcset="imagens/CSS3-pp.png">
+                        <img src="imagens/CSS3.png" alt="Foto Arthur">
+                    </picture>
+                    <picture id="img03">
+                        <source media="(max-width: 570px)" srcset="imagens/JS-pp.png">
+                        <img src="imagens/JS.png" alt="Foto Arthur">
+                    </picture>
+                </div>
+
+                <div class="slider">
+                    <div class="slides">
+
+                        <input type="radio" name="slide-bnt" id="btn01">
+                        <input type="radio" name="slide-bnt" id="btn02">
+                        <input type="radio" name="slide-bnt" id="btn03">
+
+                        
+                            <div class="slide first">
+                                <p>Tenho conhecimento em HTML5 e continuo estuando, iniciei os estudos na linguagem de marcação a 3 meses.</p>
+                            </div>
+                            <div class="slide">
+                                <p>Tenho conhecimento em CSS3 e continuo estuando, iniciei os estudos na linguagem de estilo a 3 meses.</p>
+                            </div>
+                            <div class="slide">
+                                <p>Iniciei os estudos na linguagem de programação JavaScript a 1 mês.</p>
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn01"></div>
+                                <div class="auto-btn02"></div>
+                                <div class="auto-btn03"></div>
+                            </div>
+                        
+                    </div>
+                    <div class="navigation-bar">
+                        <label class="manual-btn" for="btn01"></label>
+                        <label class="manual-btn" for="btn02"></label>
+                        <label class="manual-btn" for="btn03"></label>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="projetos">
-            <h3>Projetos</h3>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div id="projetos">
+                <h3>Projetos</h3>
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
             </div>
         </section>
     </main>
