@@ -81,7 +81,7 @@ span#burguer:active{
 }
 
 /*main - home*/
-main div#fundo{
+main div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
     background-color: black;
     background-image: url('../imagens/fundo-home.jpg');
     background-size: cover;
@@ -313,10 +313,11 @@ section.habilidades div#img{
 /*main - projetos*/
 
 .projetos{
-    height: 600px;
+    height: 700px;
     background-color: rgb(36, 33, 33);
-    /*background-image: linear-gradient(to top, #162B46, #1F6986, #FFFFFF);*/
+    box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.562);
 }
+
 .projetos h3{
     font-family: var(--fonte03);
     font-size: 2.5em;
