@@ -3,6 +3,10 @@
     font-family: Zaptron;
     src: url('fontes/Zaptron-Regular.otf') format('opentype');
 }
+@font-face {
+    font-family: Prime;
+    src: url('fontes/Prime\ Regular.otf') format('opentype');
+}
 @import url('https://fonts.googleapis.com/css2?family= Raleway :wght@400;600;700 & display=swap');
 
 *{
@@ -20,6 +24,7 @@
 
     --fonte01: 'Zaptron', sans-serif;
     --fonte02: 'Raleway', sans-serif;
+    --fonte03: 'Prime', sans-serif;
 }
 
 /*Header - menu*/
@@ -252,7 +257,7 @@ section.habilidades div#img{
 }
 
 .manual-btn{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.425);
     border-radius: 50%;
     padding: 6px;
     
@@ -276,7 +281,7 @@ section.habilidades div#img{
 }
 
 .navigation-auto div{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.377);
     border-radius: 50%;
     padding: 6px;
 }
@@ -305,3 +310,87 @@ section.habilidades div#img{
 #btn03:checked ~ .first{
     margin-left: -60%;
 }
+/*main - projetos*/
+
+.projetos{
+    height: 600px;
+    background-color: rgb(36, 33, 33);
+    /*background-image: linear-gradient(to top, #162B46, #1F6986, #FFFFFF);*/
+}
+.projetos h3{
+    font-family: var(--fonte03);
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+#projetos{
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.proj01{
+    width: 39%;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+
+.proj02{
+    width: 39%;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+
+.proj03{
+    width: 39%;
+    height:30%;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+}
+
+.proj04{
+    width: 39%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.proj01, .proj02, .proj03, .proj04{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+    font-family: var(--fonte03);
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.39);
+    transition: all 400ms ease-in-out;
+}
+
+.proj01 span, .proj02 span, .proj03 span, .proj04 span{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(235, 87, 33);
+}
+
+.proj01:hover, .proj02:hover, .proj03:hover, .proj04:hover{
+    transform: translate(2%, 2%);
+    background-color: rgba(255, 255, 255, 0.212);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.425);
+    cursor: pointer;
+}
+
