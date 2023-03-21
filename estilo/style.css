@@ -85,10 +85,10 @@ span#burguer:active{
 }
 /*img - scroll down*/
 #scroll-down{
-    transform: translate(42%, 470px);
+    transform: translate(44%, 470px);
 }
 #scroll-down img{
-    width: 60px;
+    width: 12%;
 }
 
 /*main - home*/
