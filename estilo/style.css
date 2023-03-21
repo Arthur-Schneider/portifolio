@@ -76,6 +76,9 @@ span#burguer{
     font-size: 35px;
     padding-right: 10px;
 }
+span#burguer:hover{
+    cursor: pointer;
+}
 span#burguer:active{
     color: white;
     cursor: pointer;
