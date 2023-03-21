@@ -83,13 +83,6 @@ span#burguer:active{
     color: white;
     cursor: pointer;
 }
-/*img - scroll down*/
-#scroll-down{
-    transform: translate(44%, 470px);
-}
-#scroll-down img{
-    width: 12%;
-}
 
 /*main - home*/
 main div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
@@ -98,7 +91,7 @@ main div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
     background-size: cover;
     background-position: right, center;
     background-attachment: fixed;
-    height: 1020px;
+    height: 1320px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.562);
 }
 section.home{
@@ -129,7 +122,7 @@ section.home h2{
 }
 section.home div#botao-home{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 30%;
 }
 section.home div#botao-home a{
@@ -155,22 +148,18 @@ section.home div#botao-home a:active{
     box-shadow: -3px 3px 6px #ffd9cf65;
     transform: translate(+3px, -3px);
 }
-/*espaco entre home e arthur*/
-div#espaco{
-    width: 100vw;
-    height: 90px;
-    transform: translate(0px, -44px);
+
+/*img - scroll down*/
+#scroll-down{
+    transform: translate(44%, 650px);
 }
-div#espaco p{
-    font-size: 85px;
-    font-weight: 100;
-    font-family: var(--fonte01);
-    text-align: center;
-    color: var(--cor05);
-    
+#scroll-down img{
+    width: 12%;
 }
-/*main - arthur*/
+
+/*main - quem sou*/
 section.arthur{
+    margin-top: 220px;
     padding: 20px;
     color: var(--cor04);
     font-family: var(--fonte02);
@@ -201,6 +190,22 @@ section.arthur div#arthur{
     height: 400px;
     position: relative;
 }
+
+/*espaco entre quem sou e habilidades*/
+div#espaco{
+    width: 100vw;
+    height: 90px;
+    transform: translate(0px, -44px);
+}
+div#espaco p{
+    font-size: 85px;
+    font-weight: 100;
+    font-family: var(--fonte01);
+    text-align: center;
+    color: var(--cor05);
+    
+}
+
 /*main - hailidaddes*/
 section.habilidades{
     padding: 1px 20px 20px 20px;
