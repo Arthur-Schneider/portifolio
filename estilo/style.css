@@ -83,6 +83,13 @@ span#burguer:active{
     color: white;
     cursor: pointer;
 }
+/*img - scroll down*/
+#scroll-down{
+    transform: translate(42%, 470px);
+}
+#scroll-down img{
+    width: 60px;
+}
 
 /*main - home*/
 main div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
