@@ -402,26 +402,55 @@ section.habilidades div#img{
     background-color: var(--cor06) ;
     font-family: var(--fonte02);
     color: var(--cor04);
+    border-top: 3px dashed var(--cor04);
 }
 
 #menu-rodape{
     display: inline-block;
     width: 35%;
-    height: 120px;
-    background-color: #5E94CC;
+    height: 100px;
     margin-left: 10%;
     margin-top: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+#menu-rodape h3{
+    font-weight: bold;
+    color: var(--cor05);
 }
 #menu-rodape ul{
     list-style-type: none;
 }
 
+#menu-rodape a, #redes-sociais a{
+    color: var(--cor04);
+    text-decoration: none;
+}
+#menu-rodape a:hover, #redes-sociais a:hover{
+    color: #ceaea6;
+    font-weight: bold;
+}
+
 #redes-sociais{
     display: inline-block;
+    transform: translate(0px , -28px);
     width: 35%;
     margin-left: 10%;
     margin-top: 30px;
-    height: 120px;
-    background-color: #5E94CC;
+    height: 100px; 
+    font-size: 14px;
+    line-height: 25px;
+}
+#redes-sociais h3{
+    font-weight: bold;
+    color: var(--cor05);
 }
 
+#contato p{
+    display: inline-block;
+    padding: 10px;
+}
+#contato p:not(:first-child){
+    padding-right: 45px;
+}
