@@ -399,10 +399,11 @@ section.habilidades div#img{
 /*footer -rodapé*/
 
 .rodape{
-    background-color: var(--cor06) ;
+    background-color: var(--cor01) ;
     font-family: var(--fonte02);
     color: var(--cor04);
     border-top: 3px dashed var(--cor04);
+    box-shadow: inset 0px 5px 10px var(--cor06);
 }
 
 #menu-rodape{
@@ -450,7 +451,4 @@ section.habilidades div#img{
 #contato p{
     display: inline-block;
     padding: 10px;
-}
-#contato p:not(:first-child){
-    padding-right: 45px;
 }
