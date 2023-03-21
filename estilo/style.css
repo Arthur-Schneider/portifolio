@@ -120,7 +120,9 @@ section.home h2{
     font-size: 22px;
     font-family: var(--fonte02);
 }
-section.home div#botao-home{
+
+/*Botões do Linkedin e Github do Home*/
+section.home div#botao-home{ 
     position: absolute;
     top: 70%;
     left: 30%;
@@ -151,10 +153,13 @@ section.home div#botao-home a:active{
 
 /*img - scroll down*/
 #scroll-down{
-    transform: translate(44%, 650px);
+    transform: translate(0%, 650px);
+    width: 100%;
 }
 #scroll-down img{
-    width: 12%;
+    display: block;
+    margin: auto;
+    width: 65px;
 }
 
 /*main - quem sou*/
@@ -191,7 +196,7 @@ section.arthur div#arthur{
     position: relative;
 }
 
-/*espaco entre quem sou e habilidades*/
+/*Simbolo </> entre quem sou e habilidades*/
 div#espaco{
     width: 100vw;
     height: 90px;
