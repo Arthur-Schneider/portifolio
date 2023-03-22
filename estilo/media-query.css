@@ -9,14 +9,159 @@ Tablet: de 768px até 992px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    span#burguer{
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --cor01: black;
+        --cor02: #5E94CC;
+        --cor03: #90FFFE;
+        --cor04: #FFD9CF;
+        --cor05: #CC655E;
+        --cor06: rgb(36, 33, 33);
+    
+        --fonte01: 'Zaptron', sans-serif;
+        --fonte02: 'Raleway', sans-serif;
+        --fonte03: 'Prime', sans-serif;
+    }
+
+    /*Simbolo do menu hamburguer*/
+    span#burguer{ 
         display: none;
     }
     
+    /*Menu*/
+    header menu{
+        display: block;
+        margin-right: 8px;
+    }
     header menu > ul > li{
         display: inline-block;
     }
+    header ul > li a:hover{
+        background-color: var(--cor05);
+        color: var(--cor06);
+        border-radius: 15px;
+        width: auto;
+        cursor: pointer;
+        transition: all ease-in-out .5s;
+    }
+    header h2{
+        margin-top: 12px;
+    }
+
+    /*main home*/
+    section.home h1{
+        font-size: 80px;
+    }
+    section.home h2{
+        font-size: 28px;
+    }
+
+    /*Botões do Linkedin e Github do Home*/
+    section.home div#botao-home a{
+        width: 120px;
+        font-size: 18px;
+        transition: all ease-in-out .5s;
+    }
+    section.home div#botao-home a:hover{
+        background-color: var(--cor04);
+        color: var(--cor05);
+        box-shadow: -3px 3px 6px #ffd9cf65;
+        transform: translate(+3px, -3px);
+    }
+
+    /*img - scroll down*/
+    #scroll-down{
+        transform: translate(0%, 480px);
+        width: 100%;
+    }
+
+    /*Simbolo </> entre quem sou e habilidades*/
+    div#espaco{
+        transform: translate(0px, -58px);
+    }
+    div#espaco p{
+        font-size: 110px;
+    }
+
+    /*main - hailidaddes*/
+    /*Slider*/
+    .slider{
+        width: 300px;
+        transform: translate(300px, -300px);
+        background-color: var(--cor06);
+        color: var(--cor04);
+    }
+
+    /*rodapé*/
+    #menu-rodape{
+        display: inline-block;
+        font-size: 16px;
+        width: 15%;
+        background-color: #5E94CC;
+        
+    }
+    #redes-sociais{
+        display: inline-block;
+        background-color: #5E94CC;
+        font-size: 16px;
+        width: 20%;
+        
+    }
+    #contato{
+        display: inline-block;
+        font-size: 16px;
+        width: 280px;
+        background-color: #5E94CC;
     
+    }
+    #contato h3{
+        font-weight: bold;
+        color: var(--cor05);
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+    :root{
+        --cor01: black;
+        --cor02: #5E94CC;
+        --cor03: #90FFFE;
+        --cor04: #FFD9CF;
+        --cor05: #CC655E;
+        --cor06: rgb(36, 33, 33);
+    
+        --fonte01: 'Zaptron', sans-serif;
+        --fonte02: 'Raleway', sans-serif;
+        --fonte03: 'Prime', sans-serif;
+    }
+
+    /*Simbolo do menu hamburguer*/
+    span#burguer{
+        display: none;
+    }
+    /*Menu*/
+    header menu{
+        display: block;
+    }
+    header menu > ul > li{
+        display: inline-block;
+    }
+    header ul > li a:hover{
+        background-color: var(--cor05);
+        border-radius: 5px;
+        width: auto;
+        cursor: pointer;
+        transition: all ease-in-out .5s;
+    }
+}

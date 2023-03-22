@@ -14,17 +14,19 @@
 </head>
 <body onload="mudouTamanho()">
     <header>
-        <h2>&lt;AS/&gt;</h2>
-        <span class="material-icons" id="burguer" onclick="clickMenu()">menu_open</span>
-            <menu id="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#arthur">Quem Sou</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </menu>
+        <div class="menu-total">
+            <h2>&lt;AS/&gt;</h2>
+            <span class="material-icons" id="burguer" onclick="clickMenu()">menu_open</span>
+                <menu id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#arthur">Quem Sou</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </menu>
+        </div>
     </header>
     <main>
         <div id="fundo">
@@ -61,20 +63,20 @@
                 <h3>Habilidades</h3>
                 <div id="img">
                     <picture id="img01">
-                        <source media="(max-width: 570px)" srcset="imagens/HTML5-pp.png">
+                        <source media="(max-width: 768px)" srcset="imagens/HTML5-pp.png">
                         <img src="imagens/HTML5.png" alt="Foto Arthur">
                     </picture>
                     <picture id="img02">
-                        <source media="(max-width: 570px)" srcset="imagens/CSS3-pp.png">
+                        <source media="(max-width: 768px)" srcset="imagens/CSS3-pp.png">
                         <img src="imagens/CSS3.png" alt="Foto Arthur">
                     </picture>
                     <picture id="img03">
-                        <source media="(max-width: 570px)" srcset="imagens/JS-pp.png">
+                        <source media="(max-width: 768px)" srcset="imagens/JS-pp.png">
                         <img src="imagens/JS.png" alt="Foto Arthur">
                     </picture>
                 </div>
 
-                <div class="slider">
+                <div class="slider" onload="carrosel()">
                     <div class="slides">
 
                         <input type="radio" name="slide-bnt" id="btn01" checked>
@@ -107,9 +109,9 @@
                 </div>
             </div>
         </section>
-        <section class="projetos">
+        <section id="projetos">
             <h3>PROJETOS</h3>
-            <div id="projetos">
+            <div class="projetos">
                 <div class="proj01">
                     <span class="material-icons">warning</span>
                     <p>Em breve!</p>
@@ -147,6 +149,7 @@
             </div>
 
         <div id="contato">
+            <h3>CONTATO</h3>
             <p>📞 (51) 998087443</p>
             <p>📧 arthurschneider.dev@gmail.com</p>
         </div>
