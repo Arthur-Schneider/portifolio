@@ -169,22 +169,76 @@ Grandes telas: acima de 1200px
     }
 
     /*Simbolo do menu hamburguer*/
-    span#burguer{
+    span#burguer{ 
         display: none;
     }
+    
     /*Menu*/
+    
     header menu{
         display: block;
+        margin-right: 8px;
     }
     header menu > ul > li{
         display: inline-block;
     }
     header ul > li a:hover{
         background-color: var(--cor05);
-        border-radius: 5px;
+        color: var(--cor06);
+        border-radius: 15px;
         width: auto;
         cursor: pointer;
         transition: all ease-in-out .5s;
+    }
+    header h2{
+        margin-top: 12px;
+    }
+
+    /*main home*/
+    section.home h1{
+        font-size: 90px;
+    }
+    section.home h2{
+        font-size: 28px;
+    }
+
+    /*Botões do Linkedin e Github do Home*/
+    #botao-home{
+        transform: translate(-230px, 0%);
+    }
+    section.home div#botao-home a{
+        width: 120px;
+        font-size: 18px;
+        transition: all ease-in-out .5s;
+    }
+    section.home div#botao-home a:hover{
+        background-color: var(--cor04);
+        color: var(--cor05);
+        box-shadow: -3px 3px 6px #ffd9cf65;
+        transform: translate(+3px, -3px);
+    }
+
+    /*img - scroll down*/
+    #scroll-down{
+        transform: translate(0%, 480px);
+        width: 100%;
+    }
+
+    /*Simbolo </> entre quem sou e habilidades*/
+    div#espaco{
+        transform: translate(0px, -58px);
+    }
+    div#espaco p{
+        font-size: 110px;
+    }
+
+    /*main - hailidaddes*/
+    /*Slider*/
+    .slider{
+        width: 300px;
+        transform: translate(300px, -300px);
+        background-color: var(--cor06);
+        color: var(--cor04);
     }
 
     /*rodapé*/
