@@ -99,30 +99,52 @@ Grandes telas: acima de 1200px
     }
 
     /*rodapé*/
+    #rodape{
+        width: 90%;
+        height: 180px;
+        margin: auto;
+        position: relative;
+    }
     #menu-rodape{
         display: inline-block;
+        position: absolute;
+        top: 30px;
+        margin: 0px;
+        padding: 0px;
         font-size: 16px;
-        width: 15%;
-        background-color: #5E94CC;
+        height: 120px;
+        width: 30%;
         
     }
     #redes-sociais{
         display: inline-block;
-        background-color: #5E94CC;
+        position: absolute;
+        top: 78px;
+        left: 35%;
+        margin: 0px;
+        padding: 0px;
         font-size: 16px;
-        width: 20%;
-        
+        height: 120px;
+        width: 30%;
     }
     #contato{
         display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 65%;
+        margin: 0px;
+        padding: 0px;
         font-size: 16px;
-        width: 280px;
-        background-color: #5E94CC;
-    
+        width: 40%;
+        height: 120px;
     }
     #contato h3{
         font-weight: bold;
         color: var(--cor05);
+        padding: 0px;
+    }
+    #contato p{
+        padding: 0px;
     }
 }
 
@@ -163,5 +185,54 @@ Grandes telas: acima de 1200px
         width: auto;
         cursor: pointer;
         transition: all ease-in-out .5s;
+    }
+
+    /*rodapé*/
+    #rodape{
+        width: 90%;
+        height: 180px;
+        margin: auto;
+        position: relative;
+    }
+    #menu-rodape{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        height: 120px;
+        width: 30%;
+        
+    }
+    #redes-sociais{
+        display: inline-block;
+        position: absolute;
+        top: 78px;
+        left: 35%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        height: 120px;
+        width: 30%;
+    }
+    #contato{
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        left: 65%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        width: 40%;
+        height: 120px;
+    }
+    #contato h3{
+        font-weight: bold;
+        color: var(--cor05);
+        padding: 0px;
+    }
+    #contato p{
+        padding: 0px;
     }
 }
