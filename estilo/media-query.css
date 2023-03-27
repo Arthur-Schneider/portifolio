@@ -35,6 +35,21 @@ Grandes telas: acima de 1200px
     }
     
     /*Menu*/
+    header, div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
+        background-color: black;
+        background-image: url('../imagens/fundo-home.jpg');
+        background-size: cover;
+        background-position: right, center;
+        background-attachment: fixed;
+        height: 1320px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.562);
+    }
+    header{
+        height: 55px;
+    }
+    .menu-total{
+        background-color: rgba(255, 255, 255, 0.068);
+    }
     header menu{
         display: block;
         margin-right: 8px;
@@ -47,13 +62,12 @@ Grandes telas: acima de 1200px
         opacity: 0.4;
     }
     header ul > li a:hover{
-        background-color: var(--cor01);
+        background-color: transparent;
         text-decoration: underline;
         opacity: 1;
         border-radius: 15px;
         width: auto;
         cursor: pointer;
-        
     }
     header h2{
         margin-top: 12px;
@@ -68,6 +82,9 @@ Grandes telas: acima de 1200px
     }
 
     /*Botões do Linkedin e Github do Home*/
+    #botao-home{
+        transform: translate(25px, 0%);
+    }
     section.home div#botao-home a{
         width: 120px;
         font-size: 18px;
@@ -153,6 +170,8 @@ Grandes telas: acima de 1200px
     }
 }
 
+
+
 @media screen and (min-width: 1200px) {
     *{
         padding: 0px;
@@ -179,21 +198,39 @@ Grandes telas: acima de 1200px
     }
     
     /*Menu*/
-    
+    header, div#fundo{ /*fundo quem engloba o HOME e QUEM SOU*/
+        background-color: black;
+        background-image: url('../imagens/fundo-home.jpg');
+        background-size: cover;
+        background-position: right, center;
+        background-attachment: fixed;
+        height: 1320px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.562);
+    }
+    header{
+        height: 60px;
+    }
+    .menu-total{
+        background-color: rgba(255, 255, 255, 0.068);
+    }
     header menu{
-        display: block;
         margin-right: 8px;
     }
     header menu > ul > li{
         display: inline-block;
     }
+    header ul > li > a{
+        font-size: 18px;
+        opacity: 0.4;
+        transition: all ease-in-out .5s;
+    }
     header ul > li a:hover{
-        background-color: var(--cor05);
-        color: var(--cor06);
+        background-color: transparent;
+        text-decoration: underline;
+        opacity: 1;
         border-radius: 15px;
         width: auto;
         cursor: pointer;
-        transition: all ease-in-out .5s;
     }
     header h2{
         margin-top: 12px;
@@ -201,15 +238,16 @@ Grandes telas: acima de 1200px
 
     /*main home*/
     section.home h1{
-        font-size: 90px;
+        font-size: 95px;
     }
     section.home h2{
-        font-size: 28px;
+        font-size: 30px;
+        padding-left: 10px;
     }
 
     /*Botões do Linkedin e Github do Home*/
     #botao-home{
-        transform: translate(-230px, 0%);
+        transform: translate(550px, 0%);
     }
     section.home div#botao-home a{
         width: 120px;
@@ -236,12 +274,38 @@ Grandes telas: acima de 1200px
     div#espaco p{
         font-size: 110px;
     }
+    /*quem sou*/
+    section.arthur h3{
+        padding-left: 30px;
+        font-size: 35px;
+    }
+    section.arthur p{
+        width: 50vw;
+        margin-left: 30px;
+    }
 
     /*main - hailidaddes*/
     /*Slider*/
+    section.habilidades{
+        height: 97vh;
+    }
+    section.habilidades h3{
+        margin-top: 15px;
+        padding: 5px;
+        padding-left: 20px;
+        font-size: 28px;
+    }
+    div#habilidades > div#img{
+        width: 100%;
+        padding-left: 27%;
+        margin-top: 40px;
+    }
+    div#habilidades > div#img picture{
+        padding-left: 40px;
+    }
     .slider{
         width: 300px;
-        transform: translate(300px, -300px);
+        transform: translate(500px, 90px);
         background-color: var(--cor06);
         color: var(--cor04);
     }

@@ -46,7 +46,7 @@ header h2{
     font-family: var(--fonte01);
     font-weight: 100;
 }
-header menu{
+header.menu{
     display: none;
 }
 header ul{
