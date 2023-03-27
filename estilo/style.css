@@ -360,14 +360,22 @@ section.habilidades div#img{
     position: relative;
 }
 
+.projeto01{
+    width: 50%;
+    height: 40%;
+    display: inline-block;
+}
 .proj01{
+    background-image: url('../imagens/proj-andoid.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
     width: 39%;
     height: 30%;
     position: absolute;
     top: 10%;
     left: 6%;
 }
-
 
 .proj02{
     width: 39%;
